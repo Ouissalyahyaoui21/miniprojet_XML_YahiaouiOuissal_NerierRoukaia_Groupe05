@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<club nom="Info_Tech" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="club.xsd">
+
+  <!-- ═══ CATÉGORIES ═══ -->
+  <categories>
+    <categorie id="C1" libelle="Intelligence Artificielle"/>
+    <categorie id="C2" libelle="Développement Web"/>
+    <categorie id="C3" libelle="Sécurité Informatique"/>
+  </categories>
+
+  <!-- ═══ MEMBRES ═══ -->
+  <membres>
+    <membre id="M001" categorieRef="C1">
+      <nom>Benali</nom>
+      <prenom>Ahmed</prenom>
+      <email>a.benali@club.dz</email>
+    </membre>
+    <membre id="M002" categorieRef="C1">
+      <nom>Meziane</nom>
+      <prenom>Rania</prenom>
+      <email>r.meziane@club.dz</email>
+    </membre>
+    <membre id="M003" categorieRef="C1">
+      <nom>Hamdi</nom>
+      <prenom>Youcef</prenom>
+      <email>y.hamdi@club.dz</email>
+    </membre>
+    <membre id="M004" categorieRef="C2">
+      <nom>Khelif</nom>
+      <prenom>Sara</prenom>
+      <email>s.khelif@club.dz</email>
+    </membre>
+    <membre id="M005" categorieRef="C2">
+      <nom>Boukhelifa</nom>
+      <prenom>Imad</prenom>
+      <email>i.boukhelifa@club.dz</email>
+    </membre>
+    <membre id="M006" categorieRef="C2">
+      <nom>Rahmani</nom>
+      <prenom>Nour</prenom>
+      <email>n.rahmani@club.dz</email>
+    </membre>
+    <membre id="M007" categorieRef="C3">
+      <nom>Zerrouk</nom>
+      <prenom>Karim</prenom>
+      <email>k.zerrouk@club.dz</email>
+    </membre>
+    <membre id="M008" categorieRef="C3">
+      <nom>Ferhat</nom>
+      <prenom>Lina</prenom>
+      <email>l.ferhat@club.dz</email>
+    </membre>
+    <membre id="M009" categorieRef="C3">
+      <nom>Bensalem</nom>
+      <prenom>Omar</prenom>
+      <email>o.bensalem@club.dz</email>
+    </membre>
+  </membres>
+
+  <!-- ═══ CONCOURS ═══ -->
+  <concours>
+
+    <!-- Concours Catégorie C1 : Intelligence Artificielle -->
+    <concours id="CO1" categorieRef="C1" date="2025-03-15" coefficient="1.5">
+      <titre>Concours IA — Printemps 2025</titre>
+      <participants>
+        <participant membreRef="M001">
+          <complexite>85</complexite>
+          <tempsExecution>120</tempsExecution>
+          <!-- score = (85+120) × 1.5 = 307.5 -->
+        </participant>
+        <participant membreRef="M002">
+          <complexite>90</complexite>
+          <tempsExecution>95</tempsExecution>
+          <!-- score = (90+95) × 1.5 = 277.5 -->
+        </participant>
+        <participant membreRef="M003">
+          <complexite>70</complexite>
+          <tempsExecution>150</tempsExecution>
+          <!-- score = (70+150) × 1.5 = 330.0 -->
+        </participant>
+      </participants>
+    </concours>
+
+    <!-- Concours Catégorie C2 : Développement Web -->
+    <concours id="CO2" categorieRef="C2" date="2025-04-10" coefficient="1.2">
+      <titre>Hackathon Web — Avril 2025</titre>
+      <participants>
+        <participant membreRef="M004">
+          <complexite>75</complexite>
+          <tempsExecution>200</tempsExecution>
+          <!-- score = (75+200) × 1.2 = 330.0 -->
+        </participant>
+        <participant membreRef="M005">
+          <complexite>88</complexite>
+          <tempsExecution>180</tempsExecution>
+          <!-- score = (88+180) × 1.2 = 321.6 -->
+        </participant>
+        <participant membreRef="M006">
+          <complexite>60</complexite>
+          <tempsExecution>250</tempsExecution>
+          <!-- score = (60+250) × 1.2 = 372.0 -->
+        </participant>
+      </participants>
+    </concours>
+
+    <!-- Concours Catégorie C3 : Sécurité Informatique -->
+    <concours id="CO3" categorieRef="C3" date="2025-05-20" coefficient="2.0">
+      <titre>CTF Sécurité — Mai 2025</titre>
+      <participants>
+        <participant membreRef="M007">
+          <complexite>95</complexite>
+          <tempsExecution>80</tempsExecution>
+          <!-- score = (95+80) × 2.0 = 350.0 -->
+        </participant>
+        <participant membreRef="M008">
+          <complexite>80</complexite>
+          <tempsExecution>110</tempsExecution>
+          <!-- score = (80+110) × 2.0 = 380.0 -->
+        </participant>
+        <participant membreRef="M009">
+          <complexite>65</complexite>
+          <tempsExecution>140</tempsExecution>
+          <!-- score = (65+140) × 2.0 = 410.0 -->
+        </participant>
+      </participants>
+    </concours>
+
+  </concours>
+
+</club>
